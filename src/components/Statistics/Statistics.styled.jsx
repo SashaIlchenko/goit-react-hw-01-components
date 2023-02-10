@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export function randomColor() {
+const randomColor = () => {
     return `rgb(
     ${Math.floor(Math.random() * 256)},
     ${Math.floor(Math.random() * 256)}, 
@@ -30,7 +30,7 @@ export const StatItem = styled.li`
   gap: 10px;
   width: 50px;
  padding: 15px;
- bacground-color: ${randomColor()}`
+ background-color: ${randomColor}`
 
 export const StatLabel = styled.span`
  font-size: 18px;

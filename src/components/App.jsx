@@ -4,6 +4,7 @@ import { Container } from './App.styled';
 
 import user from '../data-base/user.json';
 import data from '../data-base/data.json';
+import friends from '../data-base/friends.json';
 
 
 
@@ -18,6 +19,8 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
+
     </Container>
   );
 };
